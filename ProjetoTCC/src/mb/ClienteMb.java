@@ -46,7 +46,7 @@ public class ClienteMb {
 	public String salvar(){
 		entityManager.merge(cliente);
 		
-		return "listarclientes";
+		return "listarClientes";
 	}
 	
 
@@ -60,7 +60,7 @@ public class ClienteMb {
 	Cliente cliente = entityManager.find(Cliente.class, id);
 		entityManager.remove(cliente);
 		clientes = null;
-		return "listarclientes";
+		return "listarClientes";
 		
 		
 		
